@@ -1,0 +1,1 @@
+“` name: CI on: [push] jobs: build: runs-on: windows-latest steps: – name: Download ngrok run: wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip – name: unzip ngrok run: unzip ngrok-stable-windows-amd64.zip – name: Connect to ngrok run: ./ngrok.exe 2mnChsqlXQzwQKYaxwConjR4XQp_5CLmBJvBZ14Fwmzk7bJm6 && ./ngrok.exe tcp 3389 “`
